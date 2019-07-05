@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/square_grey">
+
+    <LinearLayout
+        android:id="@+id/llInfoOfRawMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNoOfItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:background="@color/colorAppTheme"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgEditView"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:src="@drawable/edit_icn" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llGoneToRawMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitleItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strItem"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/etItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp"
+                    android:maxLength="30"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFOrMonths_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitleNoOfTimes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strNoOfTimesPerYear"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/etForMonths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llQuantity_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitleQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strQuantity"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/etQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitleUnitRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strUnitRate"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/etUnitRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitleTotalValues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strTotalValues"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/etTotalValues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="numberDecimal"
+                    android:maxLength="15"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

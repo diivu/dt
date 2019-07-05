@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0E4375</color>
+    <color name="colorPrimaryDark">#0E4375</color>
+    <color name="colorAccent">#0E4375</color>
+
+    <color name="colorWhite">#FFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorGrayDark">#696969</color>
+    <color name="colorGrayLight">#A9A9A9</color>
+    <color name="colorGrayVeryLight">#e5e5e5</color>
+    <color name="colorAppTheme">#0E4375</color>
+    <color name="colorRedDark">#ba1515</color>
+    <color name="colorGreenDark">#16a765</color>
+    <color name="colorTransperent">#00000000</color>
+    <color name="colorRedLight">#a1fae3e3</color>
+    <color name="colorGreenLight">#d9e2f5e4</color>
+    <color name="colorGrayUltraLight">#a6d2d2d2</color>
+    <color name="colorButton">#51A6CF</color>
+    <color name="transparent_black">#66000000</color>
+    <color name="colorLightRed">#ea847f</color>
+    <color name="colorOrange">#ff7c22</color>
+    <color name="colorPendingStatus">#c13e43</color>
+    <color name="colorSubmitedStatus">#4abe48</color>
+    <color name="colorBlue">#006cbf</color>
+    <color name="colorDrawerText">#797878</color>
+
+
+</resources>

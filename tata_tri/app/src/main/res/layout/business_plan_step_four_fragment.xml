@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_grey"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/strMeansOfFinanceTitle"
+                    android:textColor="@color/colorGrayDark"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/linearMeansOfFinance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/square_grey"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/txtMeansOfFinance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:gravity="left"
+                        android:padding="15dp"
+                        android:text="@string/strMeansOfFinance"
+                        android:textColor="@color/colorGrayDark"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTotalMeansOFFinanace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:drawableRight="@drawable/drop_down"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/colorButton"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMeansOfFinance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                 >
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/square_grey"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/strOwnInvestmentTitle"
+                                    android:textColor="@color/colorGrayDark" />
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strAmount"
+                                        android:textColor="@color/colorGrayLight" />
+
+                                    <EditText
+                                        android:id="@+id/edtMeansOfFinanceAmount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/square_grey"
+                                        android:inputType="number"
+                                        android:maxLength="9"
+                                        android:padding="10dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/colorAppTheme"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/txtTitleRemarksFinance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strTitleRemarksFinance"
+                                        android:textColor="@color/colorGrayLight" />
+
+                                    <EditText
+                                        android:id="@+id/edtMeansOfFinanceRemarks"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/square_grey"
+                                        android:inputType="textCapSentences"
+                                        android:padding="10dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/colorAppTheme"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:background="@drawable/square_grey"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/strFriendsOrRelative"
+                                    android:textColor="@color/colorGrayDark" />
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strAmount"
+                                        android:textColor="@color/colorGrayLight" />
+
+                                    <EditText
+                                        android:id="@+id/edtMeansOfFinanceFriendsAmount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/square_grey"
+                                        android:inputType="number"
+                                        android:maxLength="9"
+                                        android:padding="10dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/colorAppTheme"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/txtTitleRemarksFriends"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strTitleRemarksFinance"
+                                        android:textColor="@color/colorGrayLight" />
+
+                                    <EditText
+                                        android:id="@+id/edtMeansOfFinanceFriendsRemarks"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/square_grey"
+                                        android:inputType="textCapSentences"
+                                        android:padding="10dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/colorAppTheme"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:background="@drawable/square_grey"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/strBankLoan"
+                                    android:textColor="@color/colorGrayDark" />
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strAmount"
+                                        android:textColor="@color/colorGrayLight" />
+
+                                    <EditText
+                                        android:id="@+id/edtMeansOfFinanceBankLoanAmount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/square_grey"
+                                        android:inputType="number"
+                                        android:maxLength="9"
+                                        android:padding="10dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/colorAppTheme"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/txtTitleBankLoan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strTitleRemarksFinance"
+                                        android:textColor="@color/colorGrayLight" />
+
+                                    <EditText
+                                        android:id="@+id/edtMeansOfFinanceBankLoanRemarks"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/square_grey"
+                                        android:inputType="textCapSentences"
+                                        android:padding="10dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/colorAppTheme"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="right"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/txtSaveMeansOfFinance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorButton"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="@string/strSave"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="16dp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txtProfitabilityProjection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/square_grey"
+                    android:drawableRight="@drawable/drop_down"
+                    android:gravity="left"
+                    android:padding="15dp"
+                    android:text="@string/strProfitabilityProjection"
+                    android:textColor="@color/colorGrayDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/llProfitabilityProjection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/square_grey"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorOrange"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="@string/strASalesRealisation"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="16dp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strTotalIncomeAnnual"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strAmount"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtSalesRealisationAmount"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:background="@drawable/square_grey"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorOrange"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="@string/strBCostOfProduction"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="16dp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strTitleCostOfGoods"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strAmount"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtRawmaterialsAmount"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strUtilitiesTitle"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strAmount"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtUtilitiesAmount"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strManpowerCost"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strAmount"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtManpowerCostAmount"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strAdministrativeexpenses"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strAmount"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtAdministrativeexpensesAmount"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strSellingdistribution"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strAmount"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtSellingdistributionAmount"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strRateOfInterest"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strAmount"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtInterest"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:background="@drawable/square_grey"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorOrange"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="@string/strCLessDeprication"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="16dp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strDeprication"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strAmount"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtDepricationAmount"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:background="@drawable/square_grey"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorOrange"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="@string/strTitlenetProfit"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="16dp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strGrossProfit"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strAmount"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtGrossProfit"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strTitleBreakEvenPoints"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strAmount"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtBreakEvenPoints"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/strTitleBreakEvenPeriod"
+                                        android:textColor="@color/colorGrayDark" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/strMonth"
+                                            android:textColor="@color/colorGrayLight" />
+
+                                        <EditText
+                                            android:id="@+id/edtBreakEvenPeriod"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:background="@drawable/square_grey"
+                                            android:clickable="false"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:inputType="number"
+                                            android:maxLength="15"
+                                            android:padding="10dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="@color/colorAppTheme"
+                                            android:textSize="16dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/txtSubmitBusinessPlan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorButton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/strSubmitBusinessPlan"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtSubmitAndCreatModelPlan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorButton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/strSubmitBusinessPlanAndMakeItAsModel"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

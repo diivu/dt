@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/txtTotalExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGrayLight"
+        android:textSize="16dp"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTotalExpense">
+
+        <LinearLayout
+            android:id="@+id/linearMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+          >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strTitlePleaseEnterZero"
+                android:textColor="@color/colorAppTheme"
+                android:textSize="14dp"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_grey"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtTitleFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrayLight"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strAnnualExpenditure"
+                            android:textColor="@color/colorGrayLight"/>
+
+                        <EditText
+                            android:id="@+id/edtAnnualFood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strMonthlyExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtMonthlyFood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_grey"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtTitleEducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrayLight"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strAnnualExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtAnnualEducation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strMonthlyExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtMonthlyEducation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_grey"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtTitleHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrayLight"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strAnnualExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtAnnualHealth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strMonthlyExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtMonthlyHealth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_grey"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtTitleCloths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrayLight"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strAnnualExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtAnnualCloths"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strMonthlyExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtMonthlyCloths"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_grey"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtTitleFestivals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrayLight"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strAnnualExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtAnnualFestivals"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strMonthlyExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtMonthlyFestivals"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_grey"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtTitleTransportation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrayLight"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strAnnualExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtAnnualTransportation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strMonthlyExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtMonthlyTransportation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_grey"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtTitleElectricity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrayLight"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strAnnualExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtAnnualElectricity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strMonthlyExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtMonthlyElectricity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_grey"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtTitleOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrayLight"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strAnnualExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtAnnualOther"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strMonthlyExpenditure"
+                            android:textColor="@color/colorGrayLight" />
+
+                        <EditText
+                            android:id="@+id/edtMonthlyOther"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="16dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSubmitData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/round_corner_button"
+                android:padding="10dp"
+                android:text="@string/strSubmit"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

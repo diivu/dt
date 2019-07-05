@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llInfoOfEnterprise"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/square_border_red_color">
+
+
+        <TextView
+                android:id="@+id/tvNoOfEducationEditView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAppTheme"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llGoneToEducation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/llQualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitleQualificationEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strQualification"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/etQualificationEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:drawableRight="@drawable/drop_down"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llUniversity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strUniversity"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/etUniversityEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llYearOfPassing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strYearOfPassing"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/etYearOfPassingEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llMajorSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strMajorSubject"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/etMajorSubjectEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="14dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txtCacelEducationEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strCancel"
+                    android:background="@color/colorButton"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_margin=".5dp"/>
+                <TextView
+                    android:id="@+id/txtDeleteEducationEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strDelete"
+                    android:background="@color/colorButton"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_margin=".5dp"/>
+                <TextView
+                    android:id="@+id/txtUpdateEducationEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strUpdate"
+                    android:background="@color/colorButton"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_margin=".5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

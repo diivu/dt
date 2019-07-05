@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <CheckBox
+        android:layout_marginLeft="5dp"
+        android:id="@+id/chkSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtItemOne"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="15dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/chkSelect"
+        android:id="@+id/txtItemOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:singleLine="false"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:text=""
+      />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txtItemTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text=""/>
+
+
+</RelativeLayout>

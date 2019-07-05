@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtTitleNameOfEnterpreneur"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/strSelectEnterpreneur"
+                android:textColor="@color/colorGrayLight"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtNameOFEnterpreneur"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_border_app_color"
+                android:clickable="true"
+                android:drawableRight="@drawable/drop_down"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAppTheme"
+                android:textColorHint="@color/colorGrayUltraLight"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtTitleEnterpriseName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/strEnterpriseName"
+                android:textColor="@color/colorGrayLight"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtEnterpriseName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_border_app_color"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:editable="false"
+                android:focusable="false"
+                android:textColor="@color/colorAppTheme"
+                android:textColorHint="@color/colorGrayUltraLight"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtTitleBlockName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/strBlock"
+                android:textColor="@color/colorGrayLight"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtBlockName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_border_app_color"
+                android:inputType="phone"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAppTheme"
+                android:textColorHint="@color/colorGrayUltraLight"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtTitleVillageName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/strVillage"
+                android:textColor="@color/colorGrayLight"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtVillageName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_border_app_color"
+                android:inputType="phone"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAppTheme"
+                android:textColorHint="@color/colorGrayUltraLight"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtTitleDateOfBirth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/strDateOfBirth"
+                android:textColor="@color/colorGrayLight"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtDateOfBirth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_border_app_color"
+                android:inputType="phone"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAppTheme"
+                android:textColorHint="@color/colorGrayUltraLight"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtTitleGender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/strGender"
+                android:textColor="@color/colorGrayLight"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtGender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_border_app_color"
+                android:clickable="true"
+                android:drawableRight="@drawable/drop_down"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAppTheme"
+                android:textColorHint="@color/colorGrayUltraLight"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtTitleDateOfStartingEnterprise"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/strDateOfStartingEnterprise"
+                android:textColor="@color/colorGrayLight"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtDateOfStartingEnterprise"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_border_app_color"
+                android:clickable="true"
+                android:drawableRight="@drawable/drop_down"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAppTheme"
+                android:textColorHint="@color/colorGrayUltraLight"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtTitleUploadEnterpriseImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/strUploadEnterpriseImage"
+                android:textColor="@color/colorGrayLight"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtUploadEnterpriseImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_border_app_color"
+                android:clickable="true"
+                android:drawableRight="@drawable/drop_down"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAppTheme"
+                android:textColorHint="@color/colorGrayUltraLight"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txtSubmitData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:background="@color/colorButton"
+                android:text="@string/strRegisterEnterprise"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorGrayUltraLight"
+                android:textSize="16dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

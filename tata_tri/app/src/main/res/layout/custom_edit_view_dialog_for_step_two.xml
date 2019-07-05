@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/llInfoOfEnterprise"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_grey"
+        android:orientation="vertical"
+       >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAppTheme">
+
+                    <TextView
+                        android:id="@+id/tvNoOfProductionEditView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llGoneToProductionEditView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtTitleProductItemsEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strProductItem"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtProductionEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llperDayProductionEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/square_grey"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txtTtleWorkingDurationEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strWorkingDurationPerYear"
+                        android:textColor="@color/colorGrayLight" />
+
+
+                    <RadioGroup
+                        android:id="@+id/rgHowWayEditView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Market_"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <RadioButton
+                            android:id="@+id/rdbtnday300EditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorAppTheme"
+                            android:checked="true"
+                            android:text="@string/strDay"
+                            android:textColor="@color/colorGrayLight"
+
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/rdbtnday52EditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorAppTheme"
+                            android:text="@string/strWeek"
+                            android:textColor="@color/colorGrayLight"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/rdbtnday12EditView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorAppTheme"
+                            android:text="@string/strMonth"
+                            android:textColor="@color/colorGrayLight"
+                            android:theme="@style/MyRadioButton" />
+
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/edtEnterWorkingDaysEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:hint="@string/strEnterDaysMonthOrWeek"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorGrayUltraLight"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtTitlePerDurationProductionOrSaleEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strPerDurationProductionSale"
+                    android:textColor="@color/colorGrayLight" />
+
+
+                <EditText
+                    android:id="@+id/edtWorkingDaysEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorGrayUltraLight"
+                    android:hint="@string/strHintPerDurationProductSale"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/txtTitleTotalProductionEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strTotalProduction"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtTotalProductionEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/txtTitleUtilizationEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strUtilizationPercentage"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtSaleInPercentageEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:maxLength="3"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtTitleWorkingDays60PerEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strPerDay60Per"
+                    android:textColor="@color/colorGrayLight" />
+
+
+                <EditText
+                    android:id="@+id/edtWorkingDays60PerEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/txtTitleTotalProduction60PerEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strTotalProduction60Per"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtTotalProduction60PerEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/txtTitleSalePriceRevenueEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strSalePriceRevenue"
+                    android:textColor="@color/colorGrayLight" />
+
+
+                <EditText
+                    android:id="@+id/edtSalePriceRevenueEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/txtTitleAmountPriceRevenueEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strAmountPriceRevenue"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtAmaountPriceRevenueEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtTitleCostPriceEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strTitle20CostPrice"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtCostPriceEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:maxLength="8"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtTitleTotalCostOfGoodsEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strTitle20TotalCostOfGoods"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtTotalCostOfGoodsEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:maxLength="15"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txtCancelEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strCancel"
+                        android:background="@color/colorButton"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_margin=".5dp"/>
+                    <TextView
+                        android:id="@+id/txtDeleteEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strDelete"
+                        android:background="@color/colorButton"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_margin=".5dp"/>
+                    <TextView
+                        android:id="@+id/txtUpdateEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strUpdate"
+                        android:background="@color/colorButton"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_margin=".5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

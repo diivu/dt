@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/txtTitleMemberName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="@string/strMemberName"
+            android:textColor="@color/colorGrayLight"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/edtMemberName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border_app_color"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAppTheme"
+            android:textColorHint="@color/colorGrayUltraLight"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtTitleMemberBirthDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="@string/strMemberBirthDate"
+            android:textColor="@color/colorGrayLight"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/edtMemberBirthDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border_app_color"
+            android:clickable="true"
+            android:drawableRight="@drawable/drop_down"
+            android:editable="false"
+            android:focusable="false"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAppTheme"
+            android:textColorHint="@color/colorGrayUltraLight"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtTitleMobileNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="@string/strMemberMobileNumber"
+            android:textColor="@color/colorGrayLight"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/edtMobileNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border_app_color"
+            android:padding="10dp"
+            android:textColor="@color/colorAppTheme"
+            android:textColorHint="@color/colorGrayUltraLight"
+            android:textSize="16dp"
+            android:maxLength="10"
+            android:inputType="phone"/>
+
+        <TextView
+            android:id="@+id/txtAddMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorButton"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/strAddMember"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGrayUltraLight"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleEventMemberList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

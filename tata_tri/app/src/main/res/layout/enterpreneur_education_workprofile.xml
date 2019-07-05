@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtEducationAndWorkProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_grey"
+                android:drawableRight="@drawable/drop_down"
+                android:padding="15dp"
+                android:text="@string/strEducationQualification"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearEducationAndWorkprofileMain"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearDynamicEducationAndWorkProfile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearEducationQualificationButtons"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/txtAddMoreEducationAndWorkProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorButton"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/strAddMore"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/txtSaveEducationAndWorkProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorButton"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/strSave"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSpecialTraining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_grey"
+                android:drawableRight="@drawable/drop_down"
+                android:padding="15dp"
+                android:text="@string/strSpecialTraining"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/linearSpecialTrainingMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                     >
+
+                    <LinearLayout
+                        android:id="@+id/linearDynamicSpecialTraining"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearSpecialTrainingButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/txtAddMoreSpecialTraining"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorButton"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/strAddMore"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/txtSaveSpecialTraining"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorButton"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/strSave"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            <TextView
+                android:id="@+id/txtWorkExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_grey"
+                android:drawableRight="@drawable/drop_down"
+                android:padding="15dp"
+                android:text="@string/strWorkExperience"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearWorkExperienceMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearDynamicWorkExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearWorkExperienceButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txtAddMoreWorkExperience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorButton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/strAddMore"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txtSaveWorkExperience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorButton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/strSave"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSubmitt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorButton"
+                android:padding="10dp"
+                android:text="@string/strSubmit"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

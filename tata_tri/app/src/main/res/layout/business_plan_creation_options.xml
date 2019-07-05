@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/txtTitleTypeOfEnterprise"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="@string/strTypeOfEnterprise"
+            android:textColor="@color/colorGrayLight"
+            android:textSize="14dp"
+            />
+
+        <EditText
+            android:id="@+id/edtTypeOfEnterprise"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border_app_color"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAppTheme"
+            android:textColorHint="@color/colorGrayUltraLight"
+            android:textSize="16dp"
+            android:drawableRight="@drawable/drop_down"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/txtModelBusinessPlanDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:text="@string/strBusinessPlanOptions"
+            android:textColor="@color/colorGrayLight"
+            android:textSize="16dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/txtSelectFromExistingBusinessPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strChooseFromExistingBusinessPlan"
+            android:background="@color/colorButton"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtOR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strOR"
+            android:textColor="@color/colorGrayLight"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtCreateNewBusinessPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strCreateNewBusinessPlan"
+            android:background="@color/colorButton"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

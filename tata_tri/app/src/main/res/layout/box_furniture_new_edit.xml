@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/square_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llInfoOfMachinarieEditViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvNoOfEducationFurnitureEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorAppTheme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgEditViewFurnitureEditView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:src="@drawable/edit_icn"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llGoneToMachinaryEditView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llParticularsEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleParticularFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strParticulars"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/etParticularsFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llMachinNosEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleMachineNumberFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strMachinNos"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/etMachinNosFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llPriceEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitlePerUnitPriceFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strPerUnitPrice"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/etPriceFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llAmountinRsEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleAmountInRSFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strAmount"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/etAmountinRsFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llPurchaseDateEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitlePurchaseDateFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strPurchaseDate"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/etPurchaseDateFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:maxLength="15"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llExpectedLifeEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleExpectedLifeFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strExpectedLife"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/etExpectedLifeFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPerAnnumEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleScrapValueFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strPerAnnum"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/etScrapValueFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llDepreciationEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleDepriciatedCalFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strDepriciatedCal"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/etDepreciationFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="text"
+                        android:maxLength="15"
+                        android:padding="10dp"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBookValueEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleBookValueFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strBookValue"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/etBookValueFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="text"
+                        android:maxLength="15"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSuppliersNameEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleSuppllierNameFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strSuppliersName"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/etSuppliersNameFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="textMultiLine"
+                        android:minLines="3"
+                        android:padding="10dp"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearFurnitureQuotationsEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strUploadQuotation"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <TextView
+                        android:id="@+id/edtUploadQuotaionsFurnitureEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="textMultiLine"
+                        android:maxLength="15"
+                        android:padding="10dp"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/txtCancelEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin=".5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorButton"
+                        android:padding="10dp"
+                        android:text="@string/strCancel"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txtDeleteEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin=".5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorButton"
+                        android:padding="10dp"
+                        android:text="@string/strDelete"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txtUpdateEditView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin=".5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorButton"
+                        android:padding="10dp"
+                        android:text="@string/strUpdate"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

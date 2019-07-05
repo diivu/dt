@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/txtTitleCampaignName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="@string/strCampaignName"
+            android:textColor="@color/colorGrayLight"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/edtCampaignName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border_app_color"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAppTheme"
+            android:textColorHint="@color/colorGrayUltraLight"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtTitleCampaignDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="@string/strCampaignDate"
+            android:textColor="@color/colorGrayLight"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/edtCampaignDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border_app_color"
+            android:clickable="true"
+            android:drawableRight="@drawable/drop_down"
+            android:editable="false"
+            android:focusable="false"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAppTheme"
+            android:textColorHint="@color/colorGrayUltraLight"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtTitleAddressOfCampaign"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="@string/strCampaignAddress"
+            android:textColor="@color/colorGrayLight"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/edtAddressOfCampaign"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border_app_color"
+            android:padding="10dp"
+            android:textColor="@color/colorAppTheme"
+            android:textColorHint="@color/colorGrayUltraLight"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtTitleMoreDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="@string/strCampaignMoreInfo"
+            android:textColor="@color/colorGrayLight"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/edtMoreDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border_app_color"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAppTheme"
+            android:textColorHint="@color/colorGrayUltraLight"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtCreateCampaign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorButton"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/strCreate"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGrayUltraLight"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

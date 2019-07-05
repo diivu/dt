@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/txtFamilyAnnualIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strAnnualExpenditure"
+            android:textColor="@color/colorGrayLight"/>
+
+        <EditText
+            android:id="@+id/edtFamilyIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/square_grey"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAppTheme"
+            android:textSize="16dp"
+            android:drawableRight="@drawable/drop_down"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:clickable="true"/>
+
+
+        <TextView
+            android:id="@+id/txtSelfAnnualIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strAnnualExpenditure"
+            android:textColor="@color/colorGrayLight"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edtSelfIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/square_grey"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAppTheme"
+            android:textSize="16dp"
+            android:drawableRight="@drawable/drop_down"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/txtSubmitData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorButton"
+            android:padding="10dp"
+            android:text="@string/strSubmit"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

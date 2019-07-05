@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/square_grey"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strBusinessStepTwoTitle"
+                android:textAlignment="center"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtProductionAndRevenuePlanning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_grey"
+                android:drawableRight="@drawable/drop_down"
+                android:padding="15dp"
+                android:text="@string/strProducationAndRevenuePlanning"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearProductionAndRevenuePlanning"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/linearDynamicProductionAndRevenuePlanning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearProductionAndRevenuePlanningButtons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txtAddMoreProductionAndRevenuePlanning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorButton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/strAddMore"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txtSaveProductionAndRevenuePlanning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorButton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/strSave"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTitleOtherIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_grey"
+                android:drawableRight="@drawable/drop_down"
+                android:padding="15dp"
+                android:text="@string/strOtherIncomeFromThisEnterprise"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/linearOtherIncome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strOtherIncomeDescription"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtOtherIncomeDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp"
+                        android:maxLength="50"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strOtherIncomeAmount"
+                        android:textColor="@color/colorGrayLight"
+                        android:layout_marginTop="5dp"/>
+
+                    <EditText
+                        android:id="@+id/edtOtherAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                    <TextView
+                        android:id="@+id/txtSaveOtherIncome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorButton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/strSave"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

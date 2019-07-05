@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.triapp.Fragments.HomeFragment"
+        />
+
+    <fragment
+        android:id="@+id/registeredEnterpreneur"
+        android:name="com.triapp.Fragments.RegisteredEnterprenuerFragment"
+        />
+
+    <fragment
+        android:id="@+id/creatEnterpreneur"
+        android:name="com.triapp.Fragments.CreateEnterpreneurFragment"
+        />
+
+    <fragment
+        android:id="@+id/enterprenuerDetails"
+        android:name="com.triapp.Fragments.EnterprenuersMoreDetailsFragment"
+        />
+
+    <fragment
+        android:id="@+id/enterprenuerEducationAndWorkProfile"
+        android:name="com.triapp.Fragments.EnterprenuersEducationAndWorkProfile"
+        />
+
+    <fragment
+        android:id="@+id/enterprenuerTrainingDetailsList"
+        android:name="com.triapp.Fragments.EnterprenuerTrainingListFragment"
+        />
+
+    <fragment
+        android:id="@+id/enterprenuerTrainingDetails"
+        android:name="com.triapp.Fragments.EnterpreneurTrainingDetailsFragment"
+        />
+    <fragment
+        android:id="@+id/existingEnterpriseDetails"
+        android:name="com.triapp.Fragments.ExistingEnterpriseDetailsFragment"
+        />
+    <fragment
+        android:id="@+id/familyExpenditureDetails"
+        android:name="com.triapp.Fragments.FamilyExpenditureDetailsFragment"
+        />
+    <fragment
+        android:id="@+id/enterpreneurIncomeProfile"
+        android:name="com.triapp.Fragments.EnterpreneurIncomProfileFragment"
+        />
+
+    <fragment
+        android:id="@+id/businessPlan"
+        android:name="com.triapp.Fragments.BusinessPlanFragment"
+        />
+    <fragment
+        android:id="@+id/enterpreneurListForBusinessPlan"
+        android:name="com.triapp.Fragments.EnterprenuerListForBusinessPlanFragment"
+        />
+    <fragment
+        android:id="@+id/createBusinessPlan"
+        android:name="com.triapp.Fragments.CreateBusinessPlanFragment"
+        />
+
+    <fragment
+        android:id="@+id/modelBusinessPlanList"
+        android:name="com.triapp.Fragments.ModelBusinessPlanList"
+        />
+
+    <fragment
+        android:id="@+id/businessPlanCreationOptions"
+        android:name="com.triapp.Fragments.BusinessCreationsOptionFragments"
+        />
+    <fragment
+        android:id="@+id/enterpriseTracking"
+        android:name="com.triapp.Fragments.EnterpriseTrackingFragment"
+        />
+
+    <fragment
+        android:id="@+id/campaignFragment"
+        android:name="com.triapp.Fragments.CampaignFragment"
+        />
+    <fragment
+        android:id="@+id/createCampaignFragment"
+        android:name="com.triapp.Fragments.CreateCampaignFragment"
+        />
+    <fragment
+        android:id="@+id/addEventMemberFragment"
+        android:name="com.triapp.Fragments.AddEventMemberFragment"
+        />
+    <fragment
+        android:id="@+id/registeredEnterprises"
+        android:name="com.triapp.Fragments.RegistredEnterpriseListFragment"
+        />
+    <fragment
+        android:id="@+id/registereYourEnterprises"
+        android:name="com.triapp.Fragments.RegisterEnterpriseFragment"
+        />
+    <fragment
+        android:id="@+id/trackYourEnterprises"
+        android:name="com.triapp.Fragments.TrackEnterpriseFragment"
+        />
+</navigation>

@@ -1,0 +1,406 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/square_grey"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strEnterpriseInformation"
+                android:textAlignment="center"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMainView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_grey"
+                android:drawableRight="@drawable/drop_down"
+                android:padding="15dp"
+                android:text="@string/strInformationofEnterprise"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/linearViewHideShow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/txtTitleNameOfUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strNameOfUnit"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtNameOfUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp"
+                    android:maxLength="30"/>
+
+                <TextView
+                    android:id="@+id/txtTitleState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strState"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTitleDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strDistrict"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/txtTitleBlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strBlock"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtBlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/txtTitleVillege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strVillage"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtVillege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp"
+                    android:drawableRight="@drawable/drop_down"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/txtTitleAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strAddressOfUnit"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtAddressOfUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp"
+                    android:maxLength="70"/>
+
+                <TextView
+                    android:id="@+id/txtTitlePinCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strPincode"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:maxLength="6"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtTitleEnterpriseType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strType"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtEnterpriseType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/txtTitleProductsDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strDiscription"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtProductsDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:maxLength="50"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtTitleOwnershipStructure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strOwnershipStructure"
+                    android:textColor="@color/colorGrayLight" />
+
+                <EditText
+                    android:id="@+id/edtOwnershipStructure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/square_grey"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="16dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"/>
+
+
+                <TextView
+                    android:id="@+id/txtIsGovtLisance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/strTitleIsGovt"
+                    android:textColor="@color/colorGrayLight" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/square_grey"
+                    android:padding="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/rgGovtLicense"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbtYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorAppTheme"
+                            android:text="@string/strYes"
+                            android:textColor="@color/colorGrayLight"
+                            android:textSize="14dp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/rbtNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:buttonTint="@color/colorAppTheme"
+                            android:checked="true"
+                            android:text="@string/strNo"
+                            android:textColor="@color/colorGrayLight"
+                            android:textSize="14dp"
+                            android:theme="@style/MyRadioButton" />
+                        <RadioButton
+                            android:id="@+id/rbtNotApplicable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:buttonTint="@color/colorAppTheme"
+                            android:checked="true"
+                            android:text="@string/strNotApplicable"
+                            android:textColor="@color/colorGrayLight"
+                            android:textSize="14dp"
+                            android:theme="@style/MyRadioButton" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/lineraGoveMentLicence"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rgGovtLicense"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/strDate"
+                            android:textColor="@color/colorGrayLight"
+                            android:textSize="14dp" />
+
+
+                        <EditText
+                            android:id="@+id/edtGovtLicenseDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView11"
+                            android:background="@drawable/square_grey"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="textCapWords"
+                            android:padding="10dp"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="14dp"
+                            android:drawableRight="@drawable/drop_down"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/etNameOfEnterpriseIfExisting"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/strRegNumber"
+                            android:textColor="@color/colorGrayLight"
+                            android:textSize="14dp" />
+
+
+                        <EditText
+                            android:id="@+id/edtGovtLicenseRegNo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView12"
+                            android:background="@drawable/square_grey"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:textColor="@color/colorAppTheme"
+                            android:textSize="14dp"
+                            android:maxLength="30"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/txtSubmitt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorButton"
+                    android:padding="10dp"
+                    android:text="@string/strSubmit"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

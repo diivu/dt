@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/square_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llInfoOfMachinaries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtSrNoManchinery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAppTheme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgEditView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:src="@drawable/edit_icn" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llGoneToMachinary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearMachinery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitlePerticulare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strParticulars"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtParticularsManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp"
+                        android:maxLength="30"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llMachinNos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleMachineNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strMachinNos"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtMachinNosManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llPrice_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitlePerUnitPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strPerUnitPrice"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtPriceManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llAmountinRs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleTotalAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strTotalAmount"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtAmountinRsManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPurchaseDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitlePurchaseDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strPurchaseDate"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtPurchaseDateManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="10dp"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llExpectedLife"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleExpectedLife"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strExpectedLife"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtExpectedLifeManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPerAnnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleScrapValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strPerAnnum"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtScrapValueManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llDepreciation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleDepriciatedCal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strDepriciatedCal"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtDepreciationManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="text"
+                        android:maxLength="15"
+                        android:padding="10dp"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBookValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleBookValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strBookValue"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtBookValueManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llSuppliersName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleSuppllierName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strSuppliersName"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtSuppliersNameManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="textMultiLine"
+                        android:minLines="3"
+                        android:padding="10dp"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lltaxTransInRs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleTransInRs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:text="@string/strTaxTransInRs"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtTaxTransInRsManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llElectrificationInRs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleElectrification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:text="@string/strElectrificationInRs"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <EditText
+                        android:id="@+id/edtElectrificationInRsManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/square_grey"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearQuotation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtUploadMoMApprovedViewManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strUploadQuotation"
+                        android:textColor="@color/colorGrayLight" />
+
+                    <TextView
+                        android:id="@+id/txtUploadQuotationManchinery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_grey"
+                        android:padding="10dp"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

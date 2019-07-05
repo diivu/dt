@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/homeFragment"
+            android:title="@string/strHome"
+            android:visible="true"
+            android:icon="@drawable/home_new"/>
+
+        <item
+            android:id="@+id/sync"
+            android:title="@string/strSync"
+            android:visible="true"
+            android:icon="@drawable/sync_new"/>
+
+        <item
+            android:id="@+id/campaign"
+            android:title="@string/strCampaign"
+            android:visible="false"/>
+
+
+        <item
+            android:id="@+id/registeredEnterpreneur"
+            android:title="@string/strRegistration"
+            android:visible="true"
+            android:icon="@drawable/registration_new"/>
+
+        <item
+            android:id="@+id/businessIdeation"
+            android:title="@string/strBusinessIdeation"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/businessPlan"
+            android:title="@string/strBusinessPlan"
+            android:visible="true"
+            android:icon="@drawable/business_plan_new"/>
+
+        <item
+            android:id="@+id/uploadFellowship"
+            android:title="@string/strFellowship"
+            android:visible="true"
+            android:icon="@drawable/fellowship_new"/>
+
+        <item
+            android:id="@+id/enterpriseTracking"
+            android:title="@string/strEnterpriseTrackingTitle"
+            android:visible="true"
+            android:icon="@drawable/enterprise_tracking_new"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="@string/strLogout"
+            android:visible="true"
+            android:icon="@drawable/log_out_new"
+            />
+    </group>
+
+</menu>
